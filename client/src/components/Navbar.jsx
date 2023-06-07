@@ -1,40 +1,45 @@
 import React from 'react'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-// import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link } from "react-router-dom"
 import { Container, Typography } from '@mui/material';
+import { Link } from "react-router-dom"
 
 function Navbar() {
     return (
         <>
 
-            <AppBar style={{ backgroundColor: 'transparent', boxShadow: 'none', padding: '10px 0px' }} position="static">
+            <AppBar style={{ background: 'transparent', boxShadow: 'none' }} position="static">
                 <Container>
-                    <Toolbar style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+                    <Toolbar style={{ height: '9vh', background: 'red' }}>
 
-                        <Link style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <img style={{ width: '10%' }} src="	https://cubics.technology/assets/img/tech-header.png" alt="" />
-                            <Typography style={{ fontWeight: '900', fontSize: '40px', color: '#2d3f50' }}>Cubics</Typography>
-                        </Link>
+                        <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',textDecoration:'none' }}>
+                          <Link>
+                          <Typography style={{ display: 'flex', alignItems: 'center' }} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                                <img style={{ width: '6%' }} src="https://cubics.technology/assets/img/tech-header.png" alt="" />
+                                <span style={{ color: '#2d3f50', fontSize: '40px', fontWeight: '900', fontFamily: 'sans-serif' }}>Cubics</span>
+                            </Typography>
+                          </Link>
+                            <Toolbar>
+                                <Button style={{ padding: '0% 30% ' }}><Link style={{ color: '#2d3f50', fontSize: '25px' }}>BMS</Link></Button>
+                                <Button style={{ padding: '0% 30% ' }}> <Link style={{ color: '#2d3f50', fontSize: '25px' }}> Brands</Link></Button>
+                                <Button style={{ padding: '0% 30% ' }}><Link style={{ color: '#2d3f50', fontSize: '25px' }}> POS</Link></Button>
 
-                        <p style={{ padding: '0px 40px' }} >
-                            <Link style={{ fontFamily: 'unset', color: '#2d3f50', padding: '0px 20px', textDecoration: 'none', fontWeight: '100', fontSize: '30px' }}>BMS</Link>
-                            <Link style={{ fontFamily: 'unset', color: '#2d3f50', padding: '0px 20px', textDecoration: 'none', fontWeight: '100', fontSize: '30px' }}>Brands</Link>
-                            <Link style={{ fontFamily: 'unset', color: '#2d3f50', padding: '0px 20px', textDecoration: 'none', fontWeight: '100', fontSize: '30px' }}>POS</Link>
-                        </p>
+                            </Toolbar>
 
 
-                        <p style={{ padding: '0px 40px' }} >
-                            <Link style={{ fontFamily: 'unset', color: '#2d3f50', padding: '0px 20px', textDecoration: 'none', fontWeight: '100', fontSize: '30px' }}>Cubics</Link>
-                            <Link style={{ fontFamily: 'unset', color: '#2d3f50', padding: '0px 20px', textDecoration: 'none', fontWeight: '100', fontSize: '30px' }}>Elaqe</Link>
-                            <Link style={{ fontFamily: 'unset', color: '#2d3f50', padding: '0px 20px', textDecoration: 'none', fontWeight: '100', fontSize: '30px' }}>Bloq</Link>
-                            <Button style={{display:'flex',}}>Az</Button>
-                        </p>
+
+                        </Toolbar>
+
+
+
+
                     </Toolbar>
                 </Container>
+
+
             </AppBar>
+
 
 
 
