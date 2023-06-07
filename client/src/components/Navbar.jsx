@@ -11,7 +11,7 @@ function Navbar() {
 
             <AppBar style={{ background: 'transparent', boxShadow: 'none' }} position="static">
                 <Container>
-                    <Toolbar style={{ height: '9vh', background: 'red' }}>
+                    <Toolbar style={{ height: '9vh'}}>
 
                         <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',textDecoration:'none' }}>
                           <Link>
